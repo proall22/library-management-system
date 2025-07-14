@@ -470,7 +470,7 @@ export MAIL_PASSWORD=app_password
 - **Documentation**: Check this README and inline code comments
 - **Issues**: Create GitHub issues for bugs and feature requests
 - **Discussions**: Use GitHub Discussions for questions
-- **Email**: Contact admin@360ground.com for urgent issues
+- **Email**: Contact judeaio120@gmail.com for urgent issues
 
 ### Common Issues & Solutions
 
