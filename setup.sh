@@ -15,7 +15,7 @@ source ~/.frappe-env/bin/activate
 pip install frappe-bench
 
 # Initialize bench
-bench init frappe-bench --frappe-branch version-15
+bench init --frappe-branch version-15 frappe-bench
 cd frappe-bench
 
 echo "Environment setup complete!"
