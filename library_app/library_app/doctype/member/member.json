@@ -1,0 +1,104 @@
+{
+  "actions": [],
+  "allow_rename": 1,
+  "creation": "2025-01-14 09:31:09.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": ["name1", "membership_id", "email", "phone", "address", "join_date", "status"],
+  "fields": [
+    {
+      "fieldname": "name1",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Full Name",
+      "reqd": 1
+    },
+    {
+      "fieldname": "membership_id",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Membership ID",
+      "reqd": 1,
+      "unique": 1
+    },
+    {
+      "fieldname": "email",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Email",
+      "options": "Email",
+      "reqd": 1,
+      "unique": 1
+    },
+    {
+      "fieldname": "phone",
+      "fieldtype": "Data",
+      "label": "Phone",
+      "options": "Phone"
+    },
+    {
+      "fieldname": "address",
+      "fieldtype": "Text",
+      "label": "Address"
+    },
+    {
+      "default": "Today",
+      "fieldname": "join_date",
+      "fieldtype": "Date",
+      "label": "Join Date"
+    },
+    {
+      "default": "Active",
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Active\nInactive\nSuspended"
+    }
+  ],
+  "index_web_pages_for_search": 1,
+  "links": [],
+  "modified": "2025-01-14 09:31:09.000000",
+  "modified_by": "Administrator",
+  "module": "Library App",
+  "name": "Member",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "Librarian",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "Library Member",
+      "share": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "track_changes": 1
+}
