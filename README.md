@@ -510,7 +510,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **TailwindCSS** - Utility-first CSS framework
 - **Contributors** - All developers who contributed to this project
 
----
+----
 
 **Built with ❤️ for efficient library management**
 
