@@ -122,7 +122,7 @@ library-management-system/
 
 ### 1. Environment Setup
 
-\`\`\`bash
+```bash
 
 # Clone the repository
 
@@ -133,11 +133,11 @@ cd library-management-system
 
 chmod +x setup.sh
 ./setup.sh
-\`\`\`
+```
 
 ### 2. Initialize the System
 
-\`\`\`bash
+```bash
 
 # Initialize Frappe bench and create site
 
@@ -153,11 +153,11 @@ make init
 
 # - Configure database and permissions
 
-\`\`\`
+```
 
 ### 3. Start the Application
 
-\`\`\`bash
+```bash
 
 # Start both backend and frontend
 
@@ -167,7 +167,7 @@ make start
 
 make backend-dev # Starts Frappe on http://localhost:8000
 make frontend-dev # Starts React on http://localhost:3000
-\`\`\`
+```
 
 ### 4. Access the Application
 
@@ -206,7 +206,7 @@ GET /api/method/library_app.api.auth.get_current_user
 
 ### Book Management
 
-\`\`\`bash
+```bash
 
 # Get all books
 
@@ -224,11 +224,11 @@ Body: {"title": "...", "author": "...", "isbn": "..."}
 # Search books
 
 GET /api/method/library_app.api.book.search_books?query=gatsby&limit=10
-\`\`\`
+```
 
 ### Loan Operations
 
-\`\`\`bash
+```bash
 
 # Create loan (Librarian+)
 
@@ -251,7 +251,7 @@ GET /api/method/library_app.api.loan.get_overdue_loans
 
 ### Reservation System
 
-\`\`\`bash
+```bash
 
 # Create reservation
 
@@ -266,11 +266,11 @@ GET /api/method/library_app.api.reservation.get_member_reservations?member=MEM-0
 
 POST /api/method/library_app.api.reservation.cancel_reservation
 Body: {"reservation_id": "RES-001"}
-\`\`\`
+```
 
 ### Reports & Analytics
 
-\`\`\`bash
+```bash
 
 # Library statistics
 
@@ -287,11 +287,11 @@ GET /api/method/library_app.api.reports.get_overdue_books_report
 # Popular books
 
 GET /api/method/library_app.api.reports.get_popular_books_report?limit=10
-\`\`\`
+```
 
 ## 🔧 Development Commands
 
-\`\`\`bash
+```bash
 
 # Backend development
 
@@ -317,7 +317,7 @@ bench restore # Restore from backup
 make stop # Stop all services
 make install-app # Reinstall library app
 bench update # Update Frappe framework
-\`\`\`
+```
 
 ## 📊 Key Features Deep Dive
 
@@ -449,7 +449,7 @@ bench update # Update Frappe framework
 
 ### Environment Configuration
 
-\`\`\`bash
+```bash
 
 # Production environment variables
 
@@ -463,12 +463,12 @@ export MAIL_SERVER=smtp.gmail.com
 export MAIL_PORT=587
 export MAIL_USERNAME=library@yourdomain.com
 export MAIL_PASSWORD=app_password
-\`\`\`
+```
 
 ### Deployment Steps
 
 1. **Server Setup**
-   \`\`\`bash
+   ```bash
 
    # Install production dependencies
 
@@ -478,10 +478,10 @@ export MAIL_PASSWORD=app_password
 
    sudo cp nginx.conf /etc/nginx/sites-available/library
    sudo ln -s /etc/nginx/sites-available/library /etc/nginx/sites-enabled/
-   \`\`\`
+   ```
 
 2. **Application Deployment**
-   \`\`\`bash
+   ```bash
 
    # Build frontend for production
 
@@ -492,18 +492,18 @@ export MAIL_PASSWORD=app_password
    bench setup production
    bench setup nginx
    bench setup supervisor
-   \`\`\`
+   ```
 
 3. **SSL Configuration**
-   \`\`\`bash
+   ```bash
 
    # Install SSL certificate
 
    sudo certbot --nginx -d yourdomain.com
-   \`\`\`
+   ```
 
 4. **Monitoring Setup**
-   \`\`\`bash
+   ```bash
 
    # Configure log rotation
 
@@ -512,7 +512,7 @@ export MAIL_PASSWORD=app_password
    # Set up monitoring
 
    bench setup monitoring
-   \`\`\`
+   ```
 
 ## 🤝 Contributing
 
